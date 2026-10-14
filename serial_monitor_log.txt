@@ -1,0 +1,30 @@
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:4640
+load:0x40078000,len:15592
+load:0x40080400,len:3164
+entry 0x4008059c
+
+Crash test started
+About to cause a crash...
+Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x400d1660  PS      : 0x00060730  A0      : 0x800d16a7  A1      : 0x3ffb20e0  
+A2      : 0x00000014  A3      : 0x3f40014a  A4      : 0x00000078  A5      : 0x00000003  
+A6      : 0x0001c200  A7      : 0x00000012  A8      : 0x00000000  A9      : 0x3ffb20c0  
+A10     : 0x3ffc1dd0  A11     : 0x3f400130  A12     : 0x3ffb7ab4  A13     : 0x00000000  
+A14     : 0x00000000  A15     : 0x00000019  SAR     : 0x00000001  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000000  LBEG    : 0x400852a1  LEND    : 0x400852b1  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x400d165d:0x3ffb20e0 0x400d16a4:0x3ffb2100 0x400d3da1:0x3ffb2130 0x400880ed:0x3ffb2150
+
+
+
+
+ELF file SHA256: 8436835f2
+
+Rebooting...
