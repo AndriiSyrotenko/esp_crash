@@ -10,7 +10,7 @@ void causeCrash() {
 
     volatile uint32_t value = *badAddress;
 
-    Serial.println(value);  // This line should not execute
+    Serial.println(value);
 }
 
 void setup() {
